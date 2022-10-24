@@ -36,7 +36,9 @@ When you are thinking about DDD, it is about organizing code along certain well-
 
 1. `Bounded contexts`: It is a natural division within a business. Example: context is book store (purpose is deal with the sales), and there is another context in order for book store to work is for example another context is "book ware house" (purpose is deal with delivering). This is important i.e., thinking in terms of purpose and responsbilities will help us to keep contexts seperate from each other i.e., think in terms of what are the responsbilities of the people working in that context. To communicate between contexts we create a seperate module which talks to outside world of context.
 
-2. `Entity`: An entity is an individual with in a given context. So entity is much like an object/class in object oriented world, it has one job and does one thing and does that one thing in that specific context.
+In DDD we move away from relational data base thinking. In RDBMS thinking we try to make giant components, if you will, that could be used every where which is considered bad thing in DDD world to have a single product object that could be used in multiple contexts.
+
+2. `Entity`: An entity is an individual with in a given context. So entity is much like an object/class in object oriented world, it has one job and does one thing and does that one thing in that specific context. Roles are considered in context of entities.
 
 3. `Aggregate`: An aggregate is a collection of entiteis you talk to through a single portal.
 
@@ -48,8 +50,15 @@ When you are thinking about DDD, it is about organizing code along certain well-
 
 One the great tests to see whether something belongs in a context or not is to look at the way that you describe that something and see which langauge is most appropriate for that someghing.
 
-5. `Roles`: 
+5. `Roles`: Another critical thing to bear in mind when we are talking about `entities` is that we talk about roles that people take on as they are working. Actors may accomplish tasks in different roles. Ubiquitious languge tries to identify roles for entities. So one of the things that we are doing with the ubiquitious language is trying to identify roles that people take on as the stories play out.  And the entites then will be names after those roles and not by actors.
 
+A role distinguishes the different parts played by customers in a shipment. One is the “shipper,” one the “receiver,” one the “payer,” and so on. Because only one
+customer can play a given role for a particular cargo, the association becomes a qualified many-to-one instead of many-to-many. Role might be implemented as simply a string, or it could be a class if other behavior is needed.
+
+
+#### Event storming
+
+Above we have looked how DDD systems looks structrually i.e., entities, contexts, roles, ubiquitious langauge, the next question is how do we identify or build these things? How do we design them? How do we do design with business people. How do we analyze the domain/business and develop the code that this modeling the business. There are various methods. Here we see Event storming. Refer to my Event storming.md notes.
 
 
 #### References
