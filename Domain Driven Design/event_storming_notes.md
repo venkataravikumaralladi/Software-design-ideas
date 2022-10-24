@@ -37,6 +37,10 @@ So to summarize, here we user various colors that you might see in one of the sy
 
 When we are done with event storming then we end up with a long piece of paper with a lot of sticky notes on it, but what that shows us is the entire fflow of events through a system as a story is being processed, who is handling all those events, and what context they are part of to name a few.  So this will help developer to program in easy way from the model.
 
+#### Tools for performing event storming
+
+We can use miro tool (https://miro.com/login/)
+
 
 
 
