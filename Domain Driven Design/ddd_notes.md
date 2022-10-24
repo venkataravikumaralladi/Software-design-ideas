@@ -40,7 +40,9 @@ When you are thinking about DDD, it is about organizing code along certain well-
 
 3. `Aggregate`: An aggregate is a collection of entiteis you talk to through a single portal.
 
-4. `Ubiquitous language`: 
+4. `Ubiquitous language`: The idea of the ubiquitious language is that within a given context, the people who are working in that context use a language of their own and the language of one context is difffernt from the language in other contexts. For example in book store context when we are talking about book, what you care about are things that are relevant to the responsibility of the people who are working in that context, in other words, they are relevant to sales. So if you are thinking about the book, the language of books is going to talk about things like authors, reviews, readability and length and stfff that a reader would be interested in when you are trying to sell a book to them. On the ware house context side, the language, the definition of a book is different because you don't really want to sell it anymore, here language of books involves weight, size, things that are of interest to people that are taking books and putting them into boxes and sending them off to people. So this differences occur not just noun level but also at verb level, in other words, the things that you do do books is different, depending on which context you are in and those things are captured in the language, So on the sales side you sell books obviously or you shelf books or you organize books. Over on ware-house side, you pick books off the shelves and you box the books and soon and so forth. The languages are different.  Formalizing ubiquitious languages is an important part of DDD, `the basic idea here is that language itself will be reflected in the code`
+ 
+5. fsf
 
 
 
