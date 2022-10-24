@@ -65,3 +65,4 @@ Above we have looked how DDD systems looks structrually i.e., entities, contexts
 
 1. Learning Domain Driven Design by Vlad Khononov, Orilley 
 2. Domain Driven Design by Eric Evans
+3. https://holub.com/blog
