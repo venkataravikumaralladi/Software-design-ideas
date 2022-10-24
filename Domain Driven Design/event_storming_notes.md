@@ -33,6 +33,16 @@ So to summarize, here we user various colors that you might see in one of the sy
 
 `external systems(pink)`: occured from outside world.
 
+Below picture shows Aggregates are represented as large yellow sticky notes, with commands on the left and events on the right.
+
+![image](https://user-images.githubusercontent.com/10434795/197548112-a26e3487-1e41-447d-9135-065bb39585f9.png)
+
+Below picture shows a possible decomposition of the resultant system into bounded contexts
+
+![image](https://user-images.githubusercontent.com/10434795/197548480-cdfc1e94-c80a-409f-907f-d93f81bf3b4f.png)
+
+
+
 #### Output of event storming
 
 When we are done with event storming then we end up with a long piece of paper with a lot of sticky notes on it, but what that shows us is the entire fflow of events through a system as a story is being processed, who is handling all those events, and what context they are part of to name a few.  So this will help developer to program in easy way from the model.
