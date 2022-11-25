@@ -48,9 +48,15 @@ events and are marked with a vertical bar dividing the events before and after t
 
 ![image](https://user-images.githubusercontent.com/10434795/197548112-a26e3487-1e41-447d-9135-065bb39585f9.png)
 
-Below picture shows a possible decomposition of the resultant system into bounded contexts
+#### Contexts
+Below picture shows a possible decomposition of the resultant system into bounded contexts.From entities we know who handle events. Now let us see under what contexts entites fall in place. We will add contexts on entities sticker or itself has it own sticker. 
 
 ![image](https://user-images.githubusercontent.com/10434795/197548480-cdfc1e94-c80a-409f-907f-d93f81bf3b4f.png)
+
+Below example show a snap shot of output of event storming. So now we have the events (orange). We have activities or actions or commands (blue color) to perform after the events are received. We know who (entity yellow color) is receiving the event and doing the activity. Those are yellow entity notes, and we know the bounded context within which these entities are working.
+
+![image](https://user-images.githubusercontent.com/10434795/203941988-34fa09c8-a31f-409e-bae3-16f96b7f4cbe.png)
+
 
 
 
