@@ -58,8 +58,6 @@ Below example show a snap shot of output of event storming. So now we have the e
 ![image](https://user-images.githubusercontent.com/10434795/203941988-34fa09c8-a31f-409e-bae3-16f96b7f4cbe.png)
 
 
-
-
 #### Output of event storming
 
 When we are done with event storming then we end up with a long piece of paper with a lot of sticky notes on it, but what that shows us is the entire fflow of events through a system as a story is being processed, who is handling all those events, and what context they are part of to name a few.  So this will help developer to program in easy way from the model.
@@ -69,6 +67,8 @@ The resultant model covers a wide range of the company’s business domain, buil
 At the end of a full EventStorming session, you will have a model describing the business domain’s events, commands, aggregates, and even possible bounded contexts.
 However, all of these are just nice bonuses. The real value of an EventStorming session is the process itself—the sharing of knowledge among different stakeholders,
 alignment of their mental models of the business, discovery of conflicting models, and, last but not least, formulation of the ubiquitous language.
+
+So this is really enough to code from, now we have a basic design here that is mapping the domain, that is using the domain level terminology in order to keep things straight i.e., when things happen at the domain level, we know exactly where to go on our map in order to make things work. And really we are just ready to code. For example we created shipping clerks, agents, dispatchers. Those could be mircoservices or classes if we are working inside a big monolith instead. We know what events are, how they are sent, who receives them. We are ready to code. So this is the basic coding process.
 
 #### Tools for performing event storming
 
