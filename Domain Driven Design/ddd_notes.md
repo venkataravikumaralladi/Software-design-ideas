@@ -55,7 +55,15 @@ One the great tests to see whether something belongs in a context or not is to l
 A role distinguishes the different parts played by customers in a shipment. One is the “shipper,” one the “receiver,” one the “payer,” and so on. Because only one
 customer can play a given role for a particular cargo, the association becomes a qualified many-to-one instead of many-to-many. Role might be implemented as simply a string, or it could be a class if other behavior is needed.
 
+#### Context Maps
+Context map is a map of the system which is showing me the bounded contexts and the relationships that they have between them. And a diagram like this can be extremely useful when you are trying to get a big picture.
 
+#### Entity maps
+This diagram will help in the direction of code. The basic problem here is how to put into a concise format the jobs of the individual entities inside the system. Basic idea is CRC card. The basic idea of the CRC card is to try and identify the classes in the system, the responsibilities they have, and the collaborators, who do they talk to? Now, in an entity model, classes are not really going to be classes. They are probably going to be services or something like normal classes, but the responsibilities are particularly important. (Note here we are not intersted in defining methods). Entity map shows us all the entities in the system, and the relationships they have with each other by means of the event system.
+
+![image](https://user-images.githubusercontent.com/10434795/203946112-f85902eb-1d08-441d-983f-30f574758ebe.png)
+
+Context maps are entity map diagrams are not mandatory. They are both useful as system gets larger. For one thing, the entity map diagram can capture information from multiple stories, which you don't see on an individual map, but whether you need it or not going to depend on complexity of the system. But I have found them to be usefful in my own work.
 #### Event storming
 
 Above we have looked how DDD systems looks structrually i.e., entities, contexts, roles, ubiquitious langauge, the next question is how do we identify or build these things? How do we design them? How do we do design with business people. How do we analyze the domain/business and develop the code that this modeling the business. There are various methods. Here we see Event storming. Refer to my Event storming.md notes.
